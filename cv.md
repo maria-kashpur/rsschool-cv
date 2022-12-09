@@ -1,4 +1,5 @@
 # MARIYA PYZH
+<img src="https://user-images.githubusercontent.com/107000419/206553704-8c9f2d38-3b09-401b-b63f-7751cfbf274f.png" width="150px">
 
 ## My contacts:
 * E-mail: <maria.kashpur@icloud.com>
