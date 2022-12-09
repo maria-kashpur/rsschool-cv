@@ -40,7 +40,7 @@ My goal is to gain knowledge that will allow me to become a front-end developer.
     "\nвы на пенсии: " + pensioner)
 ```
 ## Work experience:
-Nothing yet…
+Nothing yet
 
 ## Language:
 English level - A2
