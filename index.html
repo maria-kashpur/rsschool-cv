@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
-	</head>
-		<body>
-		</body>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <title>CV MARIYA PYZH</title>
+</head>
+<body>
+   <header class="header _conteiner">
+      <nav class="header__menu menu">
+         <ul class="menu__list">
+            <li class="menu__item"><a href="#AboutMe">About me</a></li>
+            <li class="menu__item"><a href="#Contacts">Contacts</a></li>
+            <li class="menu__item"><a href="#Skills">Skills</a></li>
+            <li class="menu__item"><a href="#Code">Code example</a></li>
+            <li class="menu__item"><a href="#experience">Work experience</a></li>
+            <li class="menu__item"><a href="#projects">Projects</a></li>
+            <li class="menu__item"><a href="#Language">Language</a></li>
+            <li class="menu__item"><a href="#Education">Education</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main class="page">
+      <section class="page__authorCV authorCV-page _conteiner">
+         <h1 class="authorCV-page__title">MARIYA PYZH</h1>
+         <h1 class="authorCV-page__subtitle">student of The Rolling Scopes </h1>
+         <div class="authorCV-page__photo"><img src="assets/img/206553704-8c9f2d38-3b09-401b-b63f-7751cfbf274f.png" alt="Photo"></div>
+      </section>
+      <section class="aboutMe _conteiner">
+         <h2 class="aboutMe_title" id="AboutMe">About me</h2>
+         <p class="aboutMe_content">
+            I am 29 years old. I live in Minsk. I work as a lawyer. 
+            Having worked out the mandatory distribution after the university, I realized that jurisprudence is not for me. 
+            That's why I'm here. My goal is to gain knowledge that will allow me to become a front-end developer.
+         </p>
+      </section>
+      <section class="page__contacts _conteiner">
+         <h2 id="Contacts" class="section__separate"><span>Contacts</span></h2>
+         <ul class="contacts__list">
+            <li class="contacts__item"><a href="email:maria.kashpur@icloud.com">E-mail: maria.kashpur@icloud.com</a></li>
+            <li class="contacts__item"><a href="https://github.com/maria-kashpur">GitHub: maria-kashpur</a></li>
+            <li class="contacts__item"><a href="https://t.me/Maria_Pizh">Telegram: Maria_Pizh</a></li>
+            <li class="contacts__item">Discort: Mariya_Pizh#4681</li>
+            <li class="contacts__item"><a href="tel:375298722968">Tel: +375298722968</a></li>
+         </ul>
+      </section>
+      <section class="page__skills _conteiner">
+         <h2 id="Skills" class="section__separate"><span>Skills</span></h2>
+         <ul class="skills__list">
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">JavaScript (Basic)</li>
+         </ul>
+      </section>
+      <section class="page__code _conteiner">
+         <h2 id="Code" class="section__separate"><span>Code example</span></h2>
+         <code>
+let lastName = prompt ("Введите фамилию");
+let name = prompt ("Введите имя");
+let patronymic = prompt ("Введите отчество");
+let age = parseInt(prompt ("Введите возраст в годах"));
+while (isNaN(age)){
+   age = parseInt(prompt ("Введите корректный возраст в годах"))
+}
+let gender = confirm ("ваш пол - мужской? Eсли да, то нажмите ок")?"мужской":"женский";
+let pensioner = ((gender =="мужской"&& age >=63)||(gender=="женский"&& age>=58))?"да":"нет";
+alert (
+   "ваше ФИО: " + lastName + " " + name + " " + patronymic + 
+   "\nваш возраст в годах: " +  age +
+   "\nваш возраст в днях: " + (age*365)+
+   "\nчерез 5 лет вам будет: " + (age+5)+
+   "\nваш пол: " + gender + 
+   "\nвы на пенсии: " + pensioner)
+}
+         </code>
+      </section>
+      <section class="page__experience _conteiner">
+         <h2 id="experience" class="section__separate"><span>Work experience</span></h2>
+         <ul class="experience__list">
+            <li class="experience__item">Nothing yet...</li>
+         </ul>
+      </section>
+      <section class="page__projects _conteiner">
+         <h2 id="projects" class="section__separate"><span>Projects</span></h2>
+         <ul class="projects__list">
+            <li class="projects__item"><a href="https://TESTSWG.kashpurmaria.repl.co"><span class="projects__link-arrow"><span></span></span></a></li>
+         </ul>
+      </section>
+      <section class="page__language _conteiner">
+         <h2 id="Language" class="section__separate"><span>Language</span></h2>
+         <ul class="language__list">
+            <li class="language__item">Russian - native</li>
+            <li class="language__item">English - level A2</li>
+         </ul>
+         <p></p>
+      </section>
+      <section class="page__education _conteiner">
+         <h2 id="Education" class="section__separate"><span>Education</span></h2>
+         <ul class="education__item">
+            <li class="education__list">Head First HTML and CSS: A Learner's Guide to Creating Standards-Based Web Pages</li>
+            <li class="education__list">Website development with HTML, CSS & JAVASCRIPT in IT-Academy</li>
+         </ul>
+      </section>
+   </main>
+   <footer>
+     <div class="footer__list _conteiner">
+         <div class="footer__item">
+            <span>&copy; 2022 </span>
+            <a href="https://github.com/maria-kashpur">maria-kashpur</a>
+         </div>
+         <div class="footer__item footer__item-rsscool">
+            <img src="assets/img/rs_school.svg" alt="rs_school">
+         </div>
+      </div>
+   </footer>
+</body>
 </html>
